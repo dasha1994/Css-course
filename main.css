@@ -1,8 +1,79 @@
 section {                    
-    background-color: red;
+    background-color: #ff1b68;
 }
 
 h1 {
     color: white;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main-header {
+    background: lightgreen;
+    padding: 8px 16px;
+}
+
+header > div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main-header__brand {
+    color: darkgreen;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main-nav {
+    display: inline-block;
+    text-align: right;
+    width: calc(100% - 65px);
+    vertical-align: middle;
+}
+
+.main-nav__items {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-nav__item {
+    display: inline-block;
+    margin: 0 8px;
+}
+
+.main-nav__item  a {
+    color: darkgreen;
+    text-decoration: none;
+    padding: 3px 0;
+    font-weight: bold;
+}
+
+.main-nav__item a:hover,
+.main-nav__item a:active {
+    color: white;
+    border-bottom: 3px solid;
+}
+
+.main-nav__item--cta a {
+    color: white;
+    background: #ff1b68;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.main-nav__item--cta a:hover,
+.main-nav__item--cta a:active {
+    color: #ff1b68;
+    background: white;
+    border-bottom: none;
+}
+
+#product-overview {
+    background: url("freedom.jpg");
+    height: 528px;
+    padding: 10px;
+}
+
+p::first-letter {
+    color: #ff1b68;
 }

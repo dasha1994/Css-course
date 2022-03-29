@@ -1,0 +1,20 @@
+.nice-box {
+  padding: 10px 5px 7px 11px;
+  margin: 10px 3px 5px 12px;
+  border: 5px solid darkgreen;
+  display: inline-block;
+}
+
+h1 + .nice-box {
+    height: 300px;
+    width: 50%;
+    /* display: hidden; */
+}
+
+div:last-of-type:hover {
+    background: lightgreen;
+}
+
+ /* .nice-box {
+    height:100%;
+} */
