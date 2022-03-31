@@ -1,0 +1,59 @@
+.plan {
+    width: 80%;
+    margin: 16px 0;
+    border: 4px solid #0e4f4f;
+    border-left: none;
+}
+
+#plus {
+    background: lightgreen;
+}
+
+#free {
+    background: rgb(186, 238, 186);
+    float: right;
+    text-align: right;
+    border-right: none;
+    border-left: 4px solid #0e4f4f;
+}
+
+#premium {
+    background: #0e4f4f;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.plan a {
+    text-decoration: none;
+    display: block;
+    padding: 32px;
+}
+
+.plan:hover,
+.plan:active {
+    /* because our id selector free has higher specifity, we need important to override it */
+    border: 4px solid #eb2727 !important; 
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.445);
+}
+
+.plan__title {
+    font-weight: bold;
+}
+
+#premium .plan__title {
+    color: white;
+}
+
+.plan__subtitle {
+    font-weight: bold;
+    color: rgb(156, 156, 156);;
+}
+
+.plan__description {
+    color: #0e4f4f;
+    border: 2px solid #0e4f4f;
+    background: white;
+    padding: 16px;
+}
