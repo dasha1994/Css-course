@@ -7,39 +7,38 @@ body {
     margin: 0;
 }
 
-section {                    
-    background-color: white;
-}
-
-h1 {
-    color: black;
-}
-
 .main-header {
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    background: lightgreen;
+    background: #2ddf5c;
     padding: 8px 16px;
     z-index: 1;
 }
 
-header > div {
+.main-header > div {
     display: inline-block;
     vertical-align: middle;
 }
 
 .main-header__brand {
-    color: darkgreen;
+    color: #0e4f1f;
     text-decoration: none;
     font-weight: bold;
+    font-size: 22px;
+    height: 22px;
+    display: inline-block;
+}
+
+.main-header__brand img {
+    height: 100%;
 }
 
 .main-nav {
     display: inline-block;
     text-align: right;
-    width: calc(100% - 75px);
+    width: calc(100% - 74px);
     vertical-align: middle;
 }
 
@@ -51,26 +50,26 @@ header > div {
 
 .main-nav__item {
     display: inline-block;
-    margin: 0 8px;
+    margin: 0 16px;
 }
 
-.main-nav__item  a {
-    color: darkgreen;
+.main-nav__item a {
     text-decoration: none;
-    padding: 3px 0;
+    color: #0e4f1f;
     font-weight: bold;
+    padding: 3px 0;
 }
 
 .main-nav__item a:hover,
 .main-nav__item a:active {
     color: white;
-    border-bottom: 3px solid;
+    border-bottom: 5px solid white;
 }
 
 .main-nav__item--cta a {
     color: white;
     background: #ff1b68;
-    padding: 5px;
+    padding: 8px 16px;
     border-radius: 8px;
 }
 
@@ -78,34 +77,13 @@ header > div {
 .main-nav__item--cta a:active {
     color: #ff1b68;
     background: white;
-    border-bottom: none;
-}
-
-.button {
-    background: #0e4f4f;
-    color: white;
-    font: inherit;
-    border: 1.5px solid #0e4f4f;
-    padding: 8px;
-    border-radius: 8px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.button:hover,
-.button:active {
-    color: #0e4f4f;
-    background: white;
-}
-
-.button:focus {
-    outline: none;
+    border: none;
 }
 
 .main-footer {
     background: black;
-    margin-top: 32px;
-    padding: 16px;
+    padding: 32px;
+    margin-top: 48px;
 }
 
 .main-footer__links {
@@ -121,11 +99,32 @@ header > div {
 }
 
 .main-footer__link a {
-    text-decoration: none;
     color: white;
+    text-decoration: none;
 }
 
 .main-footer__link a:hover,
 .main-footer__link a:active {
     color: #ccc;
+}
+
+.button {
+    background: #0e4f1f;
+    color: white;
+    font: inherit;
+    border: 1.5px solid #0e4f1f;
+    padding: 8px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+    background: white;
+    color: #0e4f1f;
+}
+
+.button:focus {
+    outline: none;
 }

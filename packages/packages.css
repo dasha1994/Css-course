@@ -1,4 +1,3 @@
-
 main {
     padding-top: 32px;
 }
@@ -9,76 +8,82 @@ main {
     height: 100%;
     position: fixed;
     z-index: -1;
-  }
+}
 
-.plan {
+.package {
     width: 80%;
     margin: 16px 0;
-    border: 4px solid #0e4f4f;
+    border: 4px solid #0e4f1f;
     border-left: none;
     position: relative;
 }
 
-.plan__badge {
-    top: 0;
-    right: 14px;
-    margin: 20px;
+.package:hover,
+.package:active {
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    border-color: #ff5454;
+    /* border-color: #ff5454 !important; */
+}
+
+.package a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 32px;
+}
+
+.package__badge {
     position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
     font-size: 12px;
     color: white;
-    background-color: #ff5454;
+    background: #ff5454;
     padding: 8px;
 }
 
-#plus {
-    background: rgb(126, 216, 126);
+.package__subtitle {
+    color: #979797;
 }
 
-#free {
-    background: rgb(186, 238, 186);
-    float: right;
-    text-align: right;
-    border-right: none;
-    border-left: 4px solid #0e4f4f;
-}
-
-#premium {
-    background: #0e4f4f;
+.package__info {
+    padding: 16px;
+    border: 1px solid #0e4f1f;
+    font-size: 20px;
+    color: #0e4f1f;
+    background: white;
 }
 
 .clearfix {
     clear: both;
 }
 
-.plan a {
-    text-decoration: none;
-    display: block;
-    padding: 32px;
+#plus {
+    background: rgba(213, 255, 220, 0.95);
 }
 
-.plan:hover,
-.plan:active {
-    /* because our id selector free has higher specifity, we need important to override it */
-    border: 4px solid #eb2727 !important; 
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.445);
+#free {
+    background: rgba(234, 252, 237, 0.95);
+    float: right;
+    border-right: none;
+    border-left: 4px solid #0e4f1f;
+    text-align: right;
 }
 
-.plan__title {
-    font-weight: bold;
+#free:hover,
+#free:active {
+    border-left-color: #ff5454;
 }
 
-#premium .plan__title {
+#premium {
+    background: rgba(14, 79, 31, 0.95);
+}
+
+#premium .package__title {
     color: white;
 }
 
-.plan__subtitle {
-    font-weight: bold;
-    color: rgb(156, 156, 156);;
-}
-
-.plan__description {
-    color: #0e4f4f;
-    border: 2px solid #0e4f4f;
-    background: white;
-    padding: 16px;
+#premium .package__subtitle {
+    color: #bbb;
 }
