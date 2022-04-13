@@ -201,5 +201,5 @@ body::-webkit-scrollbar {
 }
 
 .open {
-    display: block;
+    display: block !important;
 }
