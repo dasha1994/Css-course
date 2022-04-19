@@ -57,11 +57,13 @@
 
 .plan {
     background: #d5ffdc;
-    text-align: center;
     padding: 1rem;
-    margin: 0.5rem 0;
+    margin: 0;
     width: 100%;
-    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .plan--highlighted {
@@ -85,6 +87,12 @@
     color: #858585;
 }
 
+.plan__title,
+.plan__price {
+  margin: 0.5rem;
+}
+
+
 .plan--highlighted .plan__title {
     color: white;
 }
@@ -95,24 +103,30 @@
 
 .plan__features {
     list-style: none;
-    margin: 0;
+    margin: 0.2rem 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .plan__feature {
-    margin: 0.5rem 0;
+    margin: 0;
 }
 
 @media (min-width: 40rem) {
   .plan__list {
     width: 100%;
-    text-align: center;
-}
+    display: flex;
+    justify-content: center;
+   }
 
   .plan {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 30%;
-    margin: auto;
+    margin: auto 0.2rem;
     min-width: 13rem;
     max-width: 25rem;
   }
@@ -124,7 +138,7 @@
 
 #key-features {
     background: #ff1b68;
-    margin-top: 5rem;
+    margin-top: 2rem;
     padding: 1rem;
 }
 
@@ -137,7 +151,10 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .key-feature {
@@ -162,8 +179,15 @@
 }
 
 @media (min-width: 40rem) {
+  .key-feature__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .key-feature {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     width: 30%;
     vertical-align: top;
     max-width: 25rem;
