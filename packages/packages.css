@@ -20,6 +20,10 @@ main {
     overflow: hidden;
 }
 
+.package:hover {
+    animation: package-up 800ms ease-out forwards;
+}
+
 .package:hover,
 .package:active {
     box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
@@ -120,3 +124,14 @@ main {
     border-right-color: #ff5454;
    }
 }
+
+@keyframes package-up {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-2rem);
+    }
+  }
+  
+  
